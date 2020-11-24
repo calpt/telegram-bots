@@ -1,0 +1,9 @@
+*.log
+*.db
+dishes_*.json
+__pycache__
+.vscode/
+config.json
+msg.txt
+maintenance.txt
+/env/

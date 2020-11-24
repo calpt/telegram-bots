@@ -1,0 +1,18 @@
+{
+    "token": "ABCD_EFGH",
+    "maintenance_mode": false,
+    "menu_sources": ["studwerk", "tucan"],
+    "menu_locations": {
+        "stadt": "dishes_0.json",
+        "liwi": "dishes_1.json",
+        "schoefferstr": "dishes_2.json"
+    },
+    "times": [
+        "08:00",
+        "09:00",
+        "10:00",
+        "11:00",
+        "12:00"
+    ],
+    "db_config": false
+}

@@ -1,0 +1,12 @@
+help - ℹ️
+mensa - 🍽
+heute - Menü heute
+morgen - Menü morgen
+stadt - Menü Stadtmitte
+liwi - Menü Lichtwiese
+schoefferstr - Menü Schöfferstraße
+icons - Was bedeuten all diese Emojis?
+newsletter - Tägliche Menü-Benachrichtigung
+ulbplatz - Freie Plätze in der ULB
+feedback - Schreib mir dein Feedback
+settings - Ein paar nützliche Einstellungen

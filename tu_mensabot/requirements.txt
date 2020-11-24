@@ -1,0 +1,5 @@
+emoji
+lxml
+python-telegram-bot==11.1.0
+requests
+tgsend>=0.2

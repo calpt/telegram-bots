@@ -1,0 +1,98 @@
+{
+    "error_too_many_results": "Fehler: Zu viele Ergebnisse.",
+    "sidedishes_show": "Beilagen anzeigen",
+    "sidedishes_hide": "Beilagen ausblenden",
+    "intro": [
+        "Hallo {}!\nIch bin der Mensa-\uD83E\uDD16 für die TU.",
+        "Mit /mensa kannst du das Menü der Mensa durchsuchen. /heute liefert dir das Menü von heute. Über den /newsletter kannst du dir das auch jeden Tag schicken lassen.",
+        "Mehr Features gibt's über die /hilfe."
+    ],
+    "help_commands": [
+        "~~~ TU Mensa-Menü Bot ~~~",
+        "{}/mensa  \u2022  Menü durchsuchen",
+        "/heute  \u2022 Menü heute",
+        "/morgen  \u2022  Menü morgen",
+        "/mo,/di,/mi,/do,/fr  \u2022  Einzelne Wochentage",
+        "/stadt, /liwi, /schoefferstr \u2022 Menü für verschiedene Standorte",
+        "/icons  \u2022  Was bedeuten all diese Emojis?",
+        "/newsletter  \u2022  Tägliche Menü-Benachrichtigung",
+        "/ulbplatz  \u2022  Freie Plätze in der ULB",
+        "/feedback  \u2022  Schreib mir dein Feedback",
+        "/einstellungen  \u2022  Ein paar nützliche Einstellungen"
+    ],
+    "help_search": [
+        "Verwendung: <b>/mensa [Optionen] ...</b>\n",
+        "Mögliche Optionen:",
+        "\u2022 <b>Wochentage/ Daten</b>",
+        "z.B.: heute, morgen, mo, fr, 15.07., ...\n",
+        "\u2022 <b>Stichwörter</b>",
+        "z.B.: Nudeln, Schnitzel, Soja, ...\n",
+        "\u2022 <b>Kategorien (mit +...)</b>",
+        "z.B.: +\uD83D\uDC1F, +\uD83C\uDF31, +\uD83D\uDC2E, +\uD83D\uDC37, ...",
+        "(alle Optionen unter /icons)\n",
+        "\u2022 <b>Standorte</b>\n{}\n",
+        "Beispiele:",
+        "<code>/mensa heute Nudeln Suppe</code>",
+        "(Nudeln <i>oder</i> Suppe im heutigen Menü.)",
+        "<code>/mensa morgen 20.07. +\uD83E\uDD55</code>",
+        "(Vegetarisches Angebot morgen oder am 20.07.)"
+    ],
+    "help_icons": "Diese Icons kategorisieren\ndie Gerichte im Mensamenü: \n\n",
+    "maintenance": [
+        "~~~ TU Mensa-Menü Bot ~~~",
+        "\uD83D\uDEA7\uD83D\uDEE0",
+        "Der Mensabot befindet sich aktuell im Wartungsmodus.",
+        "\uD83D\uDEE0\uD83D\uDEA7"
+    ],
+    "notification_off": "Benachrichtigung aus",
+    "notification_intro": [
+        "Über diesen Befehl wird die tägliche Benachrichtigung über das Menü eingerichtet.",
+        "Aktuell gewählt: <b>{}</b>.",
+        "Wähle die Uhrzeit aus, zu der du benachrichtigt werden willst:"
+    ],
+    "notification_success": "\u2705 Einrichtung erfolgreich.\nGewählt: {}",
+    "notification_error": "\u274C Fehler bei der Einrichtung des Newsletters.",
+    "feedback_intro": [
+        "Hallo {},",
+        "du möchtest sagen, was du \uD83C\uDF89 (oder auch \uD83D\uDC4E) an mir (\uD83E\uDD16) findest oder wo ich mich noch verbessern kann?",
+        "\n<b>Schreib mir jetzt dein Feedback (max. 250 Zeichen).</b>",
+        "(Gib /nein ein, wenn du doch kein Feedback geben willst.)"
+    ],
+    "feedback_success": "Vielen Dank für dein Feedback! \uD83D\uDC99",
+    "feedback_error": "Leider gab es einen Fehler beim übermitteln deines Feedbacks.\nVersuche es später nochmal.",
+    "feedback_cancel": "Ich kann auch ohne dein Feedback leben... \uD83D\uDE22",
+    "ulb_header": "~~~ Freie Plätze in der ULB ~~~\n\n",
+    "ulb_count": "ca. {1} von {0} frei\n",
+    "settings_location": "Standort festlegen \uD83D\uDCCD",
+    "settings_preferences": "Essenspräferenzen wählen \uD83E\uDD63",
+    "back": "Zurück",
+    "preferences_edit": "Präferenzen bearbeiten",
+    "preferences_reset": "Präferenzen zurücksetzen",
+    "settings_intro": [
+        "Hier kannst du einige nützliche Einstellungen ändern.",
+        "Wähle eine der folgenden Optionen aus:"
+    ],
+    "none": "Keine",
+    "settings_location_descr": [
+        "Wähle die Mensa, die du meistens besuchst.",
+        "Ich schicke dir dann standardmäßig das Menü von dieser Mensa.",
+        "Aktuelle Einstellung: <b>{}</b>"
+    ],
+    "settings_preferences_descr": [
+        "Hier kannst du auswählen, nach welchen Kategorien ich das tägliche Menü für dich filtern soll.",
+        "Klicke dazu einfach auf den \"Bearbeiten\"-Button unten und gib eine Liste mit allen Icons von Kategorien an, die dich interessieren.",
+        "Wenn du zum Beispiel Vegetarier bist, könntest du Folgendes eingeben:",
+        "<code>Meine Präferenzen: \uD83E\uDD55 \uD83C\uDF31</code>",
+        "Hier sind die möglichen Optionen:\n"
+    ],
+    "settings_location_success": "\uD83D\uDCCD Standort geändert zu: {}",
+    "settings_location_error": "\u274C Fehler beim Ändern des Standorts.",
+    "settings_preferences_none": [
+        "Leider hast du keine gültigen Präferenzen angegeben.",
+        "Schau noch mal auf die Liste: /icons"
+    ],
+    "settings_preferences_success": "Ich werde das Menü nach diesen Präferenzen für dich filtern:\n",
+    "settings_preferences_error": "Beim Setzen deiner Präferenzen ist ein Fehler aufgetreten.",
+    "settings_preferences_reset": "\u2705 Präferenzen zurückgesetzt.",
+    "settings_preferences_reset_error": "\u274C Fehler beim Zurücksetzen deiner Präferenzen."
+}

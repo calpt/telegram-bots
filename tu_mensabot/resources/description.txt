@@ -1,0 +1,1 @@
+Dieser Bot kann dir täglich das aktuelle Mensa-Menü der TU Darmstadt schicken.
