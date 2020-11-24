@@ -1,0 +1,9 @@
+{
+    "token": "BOT_API_TOKEN",
+    "chat": "your_chat_id (as number)",
+    "check_rate": 10,
+    "login": {
+        "username": "TU-ID",
+        "pass": "password"
+    }
+}
