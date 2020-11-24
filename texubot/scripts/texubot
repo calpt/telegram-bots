@@ -1,0 +1,86 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          texubot
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start/Stop texubot
+# Description:       Start/Stop texubot Telegram bot.
+### END INIT INFO
+
+# Inspired by https://github.com/fhd/init-script-template/blob/master/template
+
+NAME="texubot"
+DIR="/usr/local/bin/bots/$NAME"
+LOGFILE="/var/log/bots/$NAME.log"
+PIDFILE="/var/run/$NAME.pid"
+
+get_pid() {
+    cat "$PIDFILE"
+}
+
+is_running() {
+    [ -f "$PIDFILE" ] && kill -0 $(get_pid) > /dev/null 2>&1
+}
+
+start() {
+    if is_running; then
+        echo "$NAME already running."
+    else
+        echo "Starting $NAME ..."
+        # Create log
+        mkdir -p "$(dirname $LOGFILE)"
+        cd "$DIR"
+        # Start bot
+        nohup python3 bot.py < /dev/null >> "$LOGFILE" 2>&1 &
+        echo $! > "$PIDFILE"
+        # Check if successful
+        if ! is_running; then
+            echo "Failed to start $NAME, see $LOGFILE."
+            exit 1
+        fi
+        echo "Started $NAME."
+    fi
+}
+
+stop() {
+    if ! is_running; then
+        echo "$NAME is not running."
+    else
+        echo "Stopping $NAME ..."
+        kill -15 $(get_pid)
+        rm "$PIDFILE"
+        echo "Stopped $NAME."
+    fi
+}
+
+status() {
+    if is_running; then
+        echo "$NAME is running."
+    else
+        echo "$NAME stopped."
+        exit 1
+    fi
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    status)
+        status
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart|status}"
+        ;;
+esac
+
+exit 0
